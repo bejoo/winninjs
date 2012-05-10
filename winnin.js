@@ -5,6 +5,8 @@
 
   $(document).ready(function() {});
 
+  used = [];
+
   obj = {
     1: 0,
     2: 0,
@@ -17,9 +19,13 @@
     3: "Joris"
   };
 
-  used = [];
-
   list = $(".rankings");
+
+  $('body').click(function() {
+    used = [];
+    list.html('');
+    return people(3);
+  });
 
   randomFromTo = function(from, to) {
     return Math.floor(Math.random() * (to - from + 1) + from);
@@ -44,7 +50,5 @@
     }
     return _results;
   };
-
-  people(3);
 
 }).call(this);

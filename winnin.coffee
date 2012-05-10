@@ -1,5 +1,7 @@
 $(document).ready ->
 
+used = []
+
 obj =
 	1: 0
 	2: 0
@@ -10,9 +12,16 @@ names =
 	2: "Nico"
 	3: "Joris"
 
-used = []
-
 list = $(".rankings")
+
+$('body').click ->
+	used = []
+	list.html('')
+	people(3)
+
+
+
+
 
 randomFromTo = (from, to) ->
 	Math.floor Math.random() * (to - from + 1) + from
@@ -30,4 +39,3 @@ people = (peeps) ->
 		alreadyWinning(person, peeps)
 		i++
 
-people(3)
