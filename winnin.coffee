@@ -8,8 +8,8 @@ obj =
 	3: 0
 
 names =
-	1: "Andrin"
-	2: "Nico"
+	1: "Nico"
+	2: "Andrin"
 	3: "Joris"
 
 list = $(".rankings")
@@ -18,9 +18,6 @@ $('body').click ->
 	used = []
 	list.html('')
 	people(3)
-
-
-
 
 
 randomFromTo = (from, to) ->

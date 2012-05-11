@@ -14,8 +14,8 @@
   };
 
   names = {
-    1: "Andrin",
-    2: "Nico",
+    1: "Nico",
+    2: "Andrin",
     3: "Joris"
   };
 
